@@ -1,5 +1,5 @@
 var http = require('http');
-
+const port = process.env.PORT || 3000;
 
 var server = http.createServer((req, res)=> {
 
@@ -9,4 +9,4 @@ res.end('Hi everybody!');
 
 });
 
-server.listen(8080);
+server.listen(port);
